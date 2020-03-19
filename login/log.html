@@ -30,6 +30,9 @@
                             oAlert.className = 'alert alert-danger';
                         }else{
                             oAlert.className = 'alert alert-success';
+                            setTimeout(function(){
+                                location.href = 'userlist.html';
+                            }, 2000);
                         }
                         oAlert.style.display = 'block';
                         oAlert.innerHTML = obj.message;
